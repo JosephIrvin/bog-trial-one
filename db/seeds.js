@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const { Creature } = require('./schema')
+const Creature  = require('../models/Creature')
 
 // using Promises
 Creature.remove().then(() => {
@@ -10,4 +10,4 @@ Creature.remove().then(() => {
   return darth.save()
 }).then(() => {
   db.close()
-})
+})  
